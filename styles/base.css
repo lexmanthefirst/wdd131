@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap");
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2a3b4c;
+  color: white;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+
+header .highlight {
+  color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  background-color: rgb(40, 39, 39);
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+main {
+  width: auto;
+  height: 80%;
+  margin: 2%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+.one {
+  float: left;
+}
+.two {
+  float: right;
+}
+
+.selfie {
+  width: 30%;
+  height: 20%;
+}
+
+.card,
+aside {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description img {
+  width: 100px;
+  height: auto;
+}
+
+aside ul {
+  padding: 2rem;
+}
+
+aside ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2a3b4c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer .highlight {
+  color: #ffcc00;
+}
+
+footer .location {
+  color: #ff66b2;
+}
+h2 {
+  font-family: "Roboto Slab", serif;
+}
