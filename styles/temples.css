@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Sansita", sans-serif;
+}
+header {
+  background-color: #36454f;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333;
+ 
+}
+main { 
+max-width: 800px;
+}
+header, main{
+margin: 0 auto;       
+}
+
+h1{
+font-size: 2rem;
+color: #fff;
+}
+
+nav{
+  background-color: #36454f;
+  
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav a:hover{
+  text-decoration: underline double;
+  background-color: #eee;
+  color: #000;
+}
+.active{
+  color: yellow;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hidden{
+  display: none;
+  
+}
+/*---------------------menubars-----------------------*/
+
+.menubar {
+  z-index: 100;
+  display: inline;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.bar1,
+.bar2, 
+.bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.25s;
+}
+
+/* .bar2 {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.25s;
+} */
+
+/* Rotate first bar */
+/* .change .bar1 {
+  filter: drop-shadow(0 0 0.75rem #0000);
+  transform: rotate(-45deg) translate(-7px, 8px);
+} */
+
+/* Fade out the second bar */
+/* .change .bar2 {
+  opacity: 0;
+} */
+
+/* Rotate last bar */
+/* .change .bar3 {
+  filter: drop-shadow(0 0 0.75rem #0000);
+  transform: rotate(45deg) translate(-6px, -8px);
+} */
+
+section {
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+figure {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  background-color: #2a3b4c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer .highlight {
+  color: #ffcc00;
+}
+
+footer .location {
+  color: #ff66b2;
+}
