@@ -45,4 +45,7 @@
   figcaption {
     font-size: smaller;
   }
+  .hidden {
+    display: block;
+  }
 }
