@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WDD 131 - Place Page for Okhitoya Alex" />
+    <meta name="author" content="Alex Okhitoya" />
+    <meta name="keywords" content="Alex, Okhitoya" />
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Place Page - Okhitoya Alex</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">Nigeria</div>
+    </header>
+    <main>
+      <section class="hero-image">
+        <picture>
+          <source
+            srcset="images/naija-boxing-small.jpg"
+            media="(max-width: 600px)"
+          />
+          <source
+            srcset="images/naija-boxing-medium.jpg"
+            media="(min-width: 601px)"
+          />
+          <img
+            src="images/naija-boxing-small.jpg"
+            width="614"
+            height="768"
+            alt="Two Nigerian's in a boxing contest"
+          >
+        </picture>
+      </section>
+      <section class="data">
+        <h2>Data</h2>
+
+        <p><strong>Area:</strong> <span>923,768 km²</span></p>
+        <p><strong>Population:</strong> <span>223,800,000</span></p>
+        <p><strong>Capital:</strong> <span>Abuja</span></p>
+        <p><strong>Currency:</strong> <span>Nigerian Naira</span></p>
+        <p><strong>Time Zone:</strong> <span>West Africa Time (WAT)</span></p>
+        <p><strong>Calling Code:</strong> <span>+234</span></p>
+        <p><strong>Official Language:</strong> <span>English</span></p>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <p><strong>Temperature:</strong> <span id="temp"></span></p>
+        <p>
+          <strong>condition:</strong> <span id="condition">Partly Cloudy</span>
+        </p>
+        <p><strong>Wind:</strong> <span id="wind"></span></p>
+        <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+        <button class="calc-wind-chill">Wind Chill</button>
+      </section>
+    </main>
+    <footer>
+      <p id="copywrite"></p>
+      <p id="modified"></p>
+    </footer>
+  </body>
+</html>

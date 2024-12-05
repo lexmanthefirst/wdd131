@@ -1,13 +1,9 @@
-"use strict";
-
-// Get the current date and time
-const copyrightYear = document.getElementById("currentYear");
-const fullDate = document.getElementById("last-modified");
-
-//Get copyright year
-const today = new Date();
-copyrightYear.innerHTML = `${today.getFullYear()}`;
-
-//Get last modified date
-const date = new Date(document.lastModified);
-fullDate.innerHTML = date;
+document.addEventListener("DOMContentLoaded", () => {
+    // Update Footer with Copyright Year and Last Modified Date
+    const copyrightElement = document.getElementById("copywrite");
+    const modifiedElement = document.getElementById("modified");
+  
+    copyrightElement.textContent = `© ${new Date().getFullYear()} All Rights Reserved | Okhitoya Alex`;
+    modifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+  
+  });
