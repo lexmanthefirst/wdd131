@@ -89,6 +89,30 @@ nav a:hover{
   transition: 0.25s;
 }
 
+/* .bar2 {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.25s;
+} */
+
+/* Rotate first bar */
+/* .change .bar1 {
+  filter: drop-shadow(0 0 0.75rem #0000);
+  transform: rotate(-45deg) translate(-7px, 8px);
+} */
+
+/* Fade out the second bar */
+/* .change .bar2 {
+  opacity: 0;
+} */
+
+/* Rotate last bar */
+/* .change .bar3 {
+  filter: drop-shadow(0 0 0.75rem #0000);
+  transform: rotate(45deg) translate(-6px, -8px);
+} */
 
 section {
   width: 100%;
