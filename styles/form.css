@@ -1,0 +1,182 @@
+/* ---------- CSS Variables ---------- */
+:root {
+    /* Background Colors */
+    --back-color1: #0D1B2A;
+    --back-color2: #1D5599;
+    --back-color3: #57849C;
+
+    /* Accent Colors */
+    --accent-color1: #7FC6DE;
+    --accent-color2: #DFDFDF;
+    --accent-color3: #EFEFEF;
+
+    /* Additional Colors */
+    --wild-red: #FF0000;
+
+    /* Text Colors */
+    --text-light: #FFFFFF;
+    --text-dark: #0D0D0D;
+}
+
+/* ---------- Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--accent-color2);
+    line-height: 1.6;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    text-align: left;
+    color: var(--back-color1);
+}
+
+/* ---------- Layout Elements ---------- */
+header {
+    background-color: var(--back-color1);
+    color: var(--text-light);
+    padding: 1rem;
+    border: 5px solid var(--back-color1);
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    background-color: var(--accent-color2);
+    border-radius: 8px;
+    min-width: min(400px, 100%);
+}
+
+ /* Footer Styling */
+ footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #004080;
+    color: white;
+  }
+  
+  footer p {
+    margin: 0.5rem;
+  }
+  
+
+/* ---------- Form Elements ---------- */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+textarea,
+input[type="text"],
+input[type="submit"],
+select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 50%;
+    border: 1px solid var(--back-color2);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background-color: var(--accent-color3);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight form fields on focus */
+textarea:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: var(--back-color1);
+    box-shadow: 0 0 8px var(--accent-color1);
+    outline: none;
+}
+
+.reviewForm input[type="submit"] {
+    background: linear-gradient(135deg, var(--accent-color3), var(--accent-color1));
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px #999;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    display: block;
+    margin: 1rem auto;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reviewForm input[type="submit"]:hover {
+    background: linear-gradient(135deg, var(--accent-color1), var(--accent-color3));
+    transform: translateY(-3px);
+}
+
+/* ---------- Section-Specific Styles ---------- */
+.features label {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.features p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-bottom: 1rem;
+}
+
+.stars label {
+    float: left;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Text review section */
+.textreview {
+    margin-top: 1rem;
+}
+
+/* Install Date Section */
+.install {
+    margin-bottom: 1rem;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 600px) {
+    header, main, footer {
+        min-width: 300px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
