@@ -4,6 +4,8 @@ const overlay = document.querySelector(".overlay");
 const modalHeader = modal.querySelector(".modal-header");
 const modalContent = modal.querySelector(".modal-content");
 const modalClose = modal.querySelector(".modal-close");
+const searchBar = document.querySelector("search-input");
+const searchBtn = document.querySelector(".search-icon");
 
 
 modalClose.addEventListener("click", () => {
