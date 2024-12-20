@@ -6,15 +6,12 @@ body {
 }
 header {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #282c34;
   color: white;
   font-family: "Roboto Slab", serif;
 }
-main {
-  width: 100vw;
-  height: 100vh;
-}
+
 .table-container {
   display: grid;
   gap: 5px;
@@ -23,8 +20,8 @@ main {
   margin: 2rem;
 }
 .element {
-  width: 40px;
-  height: 60px;
+  width: 2.5rem;
+  height: 3.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,14 +87,14 @@ main {
 }
 
 .search {
-  max-width: 300px;
+  max-width: 20rem;
   margin: 0 auto;
   position: relative;
 }
 
 .search input[type="search"] {
   padding: 6px;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   font-size: 17px;
   border: none;
   outline: none;
@@ -115,7 +112,8 @@ main {
 }
 .periodic-table-container {
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
+  /* grid-template-columns: repeat(18, 1fr); */
+
   gap: 5px;
   padding: 10px;
 }
@@ -155,3 +153,52 @@ footer p {
   margin: 0.5rem;
 }
 
+nav{
+  background-color: #36454f;
+  display: block;
+  
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav a:hover{
+  background-color: #eee;
+  border-radius: 6px;
+  color: #000;
+}
+.active{
+  color: yellow;
+}
+.hidden{
+  display: none;
+  
+}
+
+
+.menubar {
+  z-index: 100;
+  display: inline;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.bar1,
+.bar2, 
+.bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.25s;
+}

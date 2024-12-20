@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/project/scripts/app.js" defer></script>
-    <script src="/scripts/getdates.js"></script>
+    <script src="/scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="/project/styles/periodic.css" />
-    <link rel="stylesheet" href="/styles/periodic-large.css">
+    <link rel="stylesheet" href="/project/styles/periodic-large.css">
     <link rel="stylesheet" href="/project/styles/normalize.css" />
     <title>Interactive Periodic Table</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="menu"> 
+          <div class="menubar" id="menu-bars">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+      </div>
       <h1>Interactive Periodic Table</h1>
+      <nav class="nav">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#small">Periodic Table</a></li>
+        </ul>
+    </nav>
       <div class="search">
         <form action="" class="search-form" aria-labelledby="search-title">
           <input

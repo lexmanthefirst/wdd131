@@ -8,6 +8,17 @@ const searchBar = document.querySelector("search-input");
 const searchBtn = document.querySelector(".search-icon");
 
 
+const menubar = document.getElementById("menu-bars");
+const nav = document.querySelector(".nav");
+const mediaQuery = window.matchMedia("(min-width: 740px)");
+
+// Toggle the navigation menu
+function toggleNav() {
+  nav.classList.toggle("hidden");
+}
+
+menubar.addEventListener("click", toggleNav);
+
 modalClose.addEventListener("click", () => {
   modal.style.display = "none";
   overlay.style.display = "none";
